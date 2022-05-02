@@ -1,0 +1,68 @@
+package com.practice4;
+
+import java.util.Scanner;
+
+public class ModifiedRectangle {
+	int length; 
+    int breadth; 
+    int area; 
+    int perimeter;
+
+    public int getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public int getBreadth() {
+		return breadth;
+	}
+
+	public void setBreadth(int breadth) {
+		this.breadth = breadth;
+	}
+
+	public int getArea() {
+		return area;
+	}
+
+	public void setArea(int area) {
+		this.area = area;
+	}
+
+	public int getPerimeter() {
+		return perimeter;
+	}
+
+	public void setPerimeter(int perimeter) {
+		this.perimeter = perimeter;
+	}
+
+	void input() {
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter length of rectangle: ");
+        length = s.nextInt();
+        System.out.print("Enter breadth of rectangle: ");
+        breadth = s.nextInt();
+    }
+
+    void calculate() {
+        area = length * breadth;
+        perimeter = 2 * (length + breadth);
+    }
+
+    void display() {
+        System.out.println("Area of Rectangle = " + area);
+        System.out.println("Perimeter of Rectangle = " + perimeter);
+    }
+
+    public static void main(String args[]) {
+        ModifiedRectangle obj = new ModifiedRectangle();
+        obj.input();
+        obj.calculate();
+        obj.display();
+    }
+
+}

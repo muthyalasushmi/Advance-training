@@ -1,0 +1,39 @@
+package com.sushmi.Product;
+
+public class Product {
+	private int pid;
+	private String  pname, address;
+	
+	public Product (int pid, String pname, String address) {
+		
+		super();
+		this.pid=pid;
+		this.pname=pname;
+		this.address=address;
+	}
+	
+	public int getid() {
+		return pid;
+	}
+	public void setproductid(int empid) {
+		this.pid = pid;
+	}
+	public String getproductname() {
+		return pname;
+	}
+	public void setproductname(String ename) {
+		this.pname = pname;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public int getproducname() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

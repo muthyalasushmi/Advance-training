@@ -1,0 +1,34 @@
+package com.sushmi.Product;
+
+public class Product {
+	private int pid;
+	private String  pname, address;
+	
+	public Product (int pid, String pname, String address) {
+		
+		super();
+		this.pid=pid;
+		this.pname=pname;
+		this.address=address;
+	}
+	
+	public int getEmpid() {
+		return pid;
+	}
+	public void setEmpid(int empid) {
+		this.pid = pid;
+	}
+	public String getEname() {
+		return pname;
+	}
+	public void setEname(String ename) {
+		this.pname = pname;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+}

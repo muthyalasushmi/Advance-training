@@ -1,0 +1,38 @@
+package com.sushmi.Product;
+
+import java.util.Vector;
+
+public class Testingproduct {
+	private static final Product[] v = null;
+	public static void main(String[] args) {
+		Vector<Product> v= addInput();
+		display(v);
+	}
+	private static Vector<Product> addInput() {
+		
+		return null;
+	}
+	private static void display(Vector<Product> v) {
+		
+	}
+	
+	public static Vector<Product> main1() {
+		
+		Product e1=new Product(101, "sushmi", "pavi");
+		Product e2=new Product(102, "pooji", "pavi");
+		Product e3=new Product(103, "vinod", "naresh");
+		Vector<Product> v=new Vector<Product>();
+		v.add(e1);
+		v.add(e2);
+		v.add(e3);
+		return v;
+		
+	}
+	public static void main2(String[] args) {
+		
+		for (Product e :v) {
+			System.out.println(e1.getproductname()+"\t"+e2.getproductname()+"\t"+e3.getAddress());
+			
+		}
+	}
+}
